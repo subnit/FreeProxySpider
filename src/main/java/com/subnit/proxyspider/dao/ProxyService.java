@@ -1,5 +1,9 @@
 package com.subnit.proxyspider.dao;
 
+import com.subnit.proxyspider.dto.Proxy;
+
+import java.util.List;
+
 /**
  * description:
  *
@@ -9,4 +13,6 @@ package com.subnit.proxyspider.dao;
  */
 public interface ProxyService {
 
+
+    List<Proxy> getProxys();
 }

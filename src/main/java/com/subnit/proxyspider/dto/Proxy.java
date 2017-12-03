@@ -1,6 +1,7 @@
 package com.subnit.proxyspider.dto;
 
 import lombok.Data;
+import lombok.Getter;
 
 /**
  * description:  a proxy
@@ -12,24 +13,24 @@ import lombok.Data;
 @Data
 public class Proxy {
     private String ip;
-    private String port;
-    private String location;
+    private int port;
+    private double time;
     private String type;
 
-    public Proxy(String ip, String port, String location) {
+    public Proxy(String ip, int port, double time) {
         this.ip = ip;
         this.port = port;
-        this.location = location;
+        this.time = time;
     }
 
-    public Proxy(String ip, String port, String location, String type) {
+    public Proxy(String ip, int port, double time, String type) {
         this.ip = ip;
         this.port = port;
-        this.location = location;
+        this.time = time;
         this.type = type;
     }
 
-    public Proxy(String ip, String port) {
+    public Proxy(String ip, int port) {
         this.ip = ip;
         this.port = port;
     }
